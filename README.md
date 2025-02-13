@@ -1,10 +1,10 @@
-🍕 Pizza Sales Data Analysis – SQL & Python Project
+##🍕 Pizza Sales Data Analysis – SQL & Python Project
 
-🚀 Project Overview
+#🚀 Project Overview
 
 This project involves analyzing pizza sales data to uncover key insights using SQL queries and visualizations in Python. By applying data cleaning, normalization, and advanced SQL queries, this project demonstrates my ability to extract actionable business insights. I also visualized the results using Matplotlib to better communicate the data-driven findings.
 
-🔧 Tools Used:
+#🔧 Tools Used:
 
 SQL (MySQL/PostgreSQL)
 
@@ -12,7 +12,7 @@ Python (Matplotlib for data visualization)
 
 Git & GitHub for version control
 
-📊 Schema Structure
+#📊 Schema Structure
 
 The project uses a relational database schema with the following tables:
 
@@ -34,7 +34,7 @@ Order_Details to Pizzas via pizza_id.
 
 Pizzas to Pizza_Types via pizza_type_id.
 
-🧑‍💻 Steps Taken to Reach the Conclusion
+#🧑‍💻 Steps Taken to Reach the Conclusion
 
 Data Collection:Data was collected from various sources including web scraping tools, Kaggle datasets, open-source data repositories, and public CSV files.
 
@@ -50,7 +50,7 @@ Data Normalization:The data was normalized to 1NF, 2NF, 3NF, and BNF to eliminat
 
 Check the GitHub repository for the detailed SQL scripts.
 
-📈 Queries & Insights
+#📈 Queries & Insights
 
 The following queries were used to generate insights, with results visualized in Python:
 
@@ -93,7 +93,7 @@ ORDER BY revenue_percentage DESC;
 
 Insight: This query is crucial for understanding which pizzas are driving the highest revenue and should be prioritized for marketing and inventory purposes.
 
-📊 Data Visualization Using Python
+#📊 Data Visualization Using Python
 
 In addition to SQL analysis, I used Python's Matplotlib library to visualize the following insights:
 
@@ -110,7 +110,7 @@ plt.xlabel('Date')
 plt.ylabel('Revenue')
 plt.show()
 
-📅 Conclusion & Learnings
+#📅 Conclusion & Learnings
 
 Key Insights:
 
@@ -134,7 +134,7 @@ Integrating predictive analytics to forecast sales.
 
 Expanding the dataset to include customer demographic data for deeper analysis.
 
-🌐 Links & Portfolio
+#🌐 Links & Portfolio
 
 LinkedIn
 
@@ -142,7 +142,7 @@ GitHub
 
 Portfolio
 
-🏃‍♂️ How to Run the Project
+#🏃‍♂️ How to Run the Project
 
 Follow these steps to run the project locally:
 
@@ -168,7 +168,7 @@ pip install matplotlib pandas
 
 Run the Python script visualize.py to see the visualized data.
 
-📚 Other Queries Worked On
+#📚 Other Queries Worked On
 
 You can explore all the other SQL queries I've worked on in the queries folder. This includes additional analysis such as:
 
