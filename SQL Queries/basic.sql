@@ -11,7 +11,7 @@ select * from pizzas;
 select * from pizza_types;
 
 -- check for orders
-select COUNT(*) from orders; 
+select * from orders; 
 
 -- check for order_details
-select COUNT(*) from order_details; 
+select * from order_details; 
