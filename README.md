@@ -41,35 +41,42 @@ FROM
 GROUP BY pizza_types.name
 ORDER BY quantity DESC
 LIMIT 5;
+
 ```
 **Insight:** Optimizes inventory management and promotional efforts.
 
 #### 2️⃣ **Order Distribution by Hour:**
 ```sql
 SELECT 
-    HOUR(order_time) AS hour, COUNT(*) AS total_orders
+    HOUR(order_time) AS hour, COUNT(order_id) AS order_count
 FROM
     orders
-GROUP BY hour
-ORDER BY hour;
+GROUP BY HOUR(order_time);
+
 ```
 **Insight:** Helps in workforce planning and scheduling during peak hours.
 
 #### 3️⃣ **Revenue Contribution by Pizza Type:**
 ```sql
 SELECT 
-    p.name,
-    SUM(od.quantity * p.price) * 100 / (SELECT 
-            SUM(quantity * price)
-        FROM
-            order_details od2
-                JOIN
-            pizzas p2 ON od2.pizza_id = p2.pizza_id) AS revenue_percentage
+    pizza_types.category,
+    ROUND((SUM(order_details.quantity * pizzas.price) / (SELECT 
+                    ROUND(SUM(order_details.quantity * pizzas.price),
+                                2) AS total_sales
+                FROM
+                    order_details
+                        JOIN
+                    pizzas ON pizzas.pizza_id = order_details.pizza_id)) * 100,
+            2) AS REVENUE
 FROM
-    order_details od
+    pizza_types
         JOIN
-    pizzas p ON od.pizza_id = p.pizza_id
-GROUP BY p.name;
+    pizzas ON pizza_types.pizza_type_id = pizzas.pizza_type_id
+        JOIN
+    order_details ON order_details.pizza_id = pizzas.pizza_id
+GROUP BY pizza_types.category
+ORDER BY REVENUE DESC;
+
 ```
 **Insight:** Guides marketing strategies by identifying high-revenue products.
 
