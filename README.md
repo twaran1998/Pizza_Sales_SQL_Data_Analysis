@@ -23,7 +23,7 @@ This project showcases my SQL and Python skills through pizza sales data analysi
 ### 🧩 **Steps Taken to Reach Conclusions**
 1. **Data Collection:** Obtained datasets from web scraping tools, Kaggle, open-source repositories, and public CSV files.
 2. **Data Cleaning:** Standardized formats, removed duplicates, and handled null values.
-3. **Normalization:** Applied 1NF, 2NF, 3NF, and BNF to enhance data integrity.
+3. **Normalization:** Applied 1NF, 2NF, 3NF, and BCNF to enhance data integrity.
 
 ---
 
