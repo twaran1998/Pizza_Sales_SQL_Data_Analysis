@@ -131,7 +131,7 @@ plt.show()
 ### 🏃‍♂️ **How to Run the Project**
 1. **Clone Repository:**  
    ```bash
-  https://www.twaran1998/SQL_Pizza_Sales_Data_Job_Analysis-.git
+https://github.com/twaran1998/SQL_Pizza_Sales_Data_Job_Analysis-.git
    ```
 2. **Set Up Database:** Import `pizza_sales_schema.sql` into MySQL/PostgreSQL.
 3. **Run Queries:** Execute scripts in the `SQL_Queries/` folder.
