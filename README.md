@@ -154,11 +154,14 @@ plt.show()
 ### 📚 **Explore All Queries**  
 Find additional SQL queries [here](https://github.com/twaran1998/SQL_Pizza_Sales_Data_Job_Analysis-/tree/main/SQL%20Queries), including:
 
--Basic: Total orders, revenue, highest-priced pizzas, most common sizes, and top pizza types by quantity.
+-Basic: 
+Total orders, revenue, highest-priced pizzas, most common sizes, and top pizza types by quantity.
 
--Intermediate: Category-wise sales, hourly order patterns, average daily orders, and top revenue-generating pizzas.
+-Intermediate: 
+Category-wise sales, hourly order patterns, average daily orders, and top revenue-generating pizzas.
 
--Advanced: Revenue contributions by pizza type, cumulative revenue trends, and top revenue-generating pizzas per category.
+-Advanced: 
+Revenue contributions by pizza type, cumulative revenue trends, and top revenue-generating pizzas per category.
 
 
 ---
