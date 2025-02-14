@@ -131,10 +131,10 @@ plt.show()
 ### 🏃‍♂️ **How to Run the Project**
 1. **Clone Repository:**  
    ```bash
-   git clone https://github.com/your-username/pizza-sales-data-analysis.git
+   git clone git@github.com:twaran1998/SQL_Pizza_Sales_Data_Job_Analysis-.git
    ```
 2. **Set Up Database:** Import `pizza_sales_schema.sql` into MySQL/PostgreSQL.
-3. **Run Queries:** Execute scripts in the `queries/` folder.
+3. **Run Queries:** Execute scripts in the `SQL_Queries/` folder.
 4. **Visualize Data:** Install dependencies and run `visualize.py`:
    ```bash
    pip install matplotlib pandas
