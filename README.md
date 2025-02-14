@@ -167,7 +167,8 @@ Revenue contributions by pizza type, cumulative revenue trends, and top revenue-
 ---
 
 ### 🌐 **Portfolio & Social Links:**  
-- [LinkedIn](your-linkedin-link)  
-- [GitHub](your-github-link)  
-- [Portfolio](your-portfolio-link)
+- [LinkedIn](https://www.linkedin.com/in/twaransahai/)  
+- [GitHub](https://github.com/twaran1998)  
+- [Portfolio](https://twaransahai-portfolio-ts.netlify.app/)
+- [Resume](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://twaransahai-portfolio-ts.netlify.app/assets/resume/Business_Analyst_Resume.pdf)
 
