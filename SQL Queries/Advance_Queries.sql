@@ -57,39 +57,3 @@ select pizza_types.category,pizza_types.name,
  group by pizza_types.category,pizza_types.name) as a) as b 
 where rn <= 3 ;
 
-
-
-
-
-
-
-
-
-
-
-
-
-#### 3️⃣ **Revenue Contribution by Pizza Type:**
-```sql
-SELECT p.name, 
-       SUM(od.quantity * p.price) * 100 / 
-       (SELECT SUM(quantity * price) FROM order_details od2 JOIN pizzas p2 ON od2.pizza_id = p2.pizza_id) AS revenue_percentage
-FROM order_details od
-JOIN pizzas p ON od.pizza_id = p.pizza_id
-GROUP BY p.name;
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
