@@ -30,19 +30,26 @@ This project showcases my SQL and Python skills through pizza sales data analysi
 ### 📈 **Key Queries & Insights**
 #### 1️⃣ **Top 5 Most Ordered Pizza Types:**
 ```sql
-SELECT p.name, SUM(od.quantity) AS total_quantity
-FROM order_details od
-JOIN pizzas p ON od.pizza_id = p.pizza_id
-GROUP BY p.name
-ORDER BY total_quantity DESC
+SELECT 
+    pizza_types.name, SUM(order_details.quantity) AS quantity
+FROM
+    pizza_types
+        JOIN
+    pizzas ON pizza_types.pizza_type_id = pizzas.pizza_type_id
+        JOIN
+    order_details ON order_details.pizza_id = pizzas.pizza_id
+GROUP BY pizza_types.name
+ORDER BY quantity DESC
 LIMIT 5;
 ```
 **Insight:** Optimizes inventory management and promotional efforts.
 
 #### 2️⃣ **Order Distribution by Hour:**
 ```sql
-SELECT HOUR(order_time) AS hour, COUNT(*) AS total_orders
-FROM orders
+SELECT 
+    HOUR(order_time) AS hour, COUNT(*) AS total_orders
+FROM
+    orders
 GROUP BY hour
 ORDER BY hour;
 ```
@@ -50,11 +57,18 @@ ORDER BY hour;
 
 #### 3️⃣ **Revenue Contribution by Pizza Type:**
 ```sql
-SELECT p.name, 
-       SUM(od.quantity * p.price) * 100 / 
-       (SELECT SUM(quantity * price) FROM order_details od2 JOIN pizzas p2 ON od2.pizza_id = p2.pizza_id) AS revenue_percentage
-FROM order_details od
-JOIN pizzas p ON od.pizza_id = p.pizza_id
+SELECT 
+    p.name,
+    SUM(od.quantity * p.price) * 100 / (SELECT 
+            SUM(quantity * price)
+        FROM
+            order_details od2
+                JOIN
+            pizzas p2 ON od2.pizza_id = p2.pizza_id) AS revenue_percentage
+FROM
+    order_details od
+        JOIN
+    pizzas p ON od.pizza_id = p.pizza_id
 GROUP BY p.name;
 ```
 **Insight:** Guides marketing strategies by identifying high-revenue products.
