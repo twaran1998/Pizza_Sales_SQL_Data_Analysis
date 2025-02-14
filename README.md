@@ -16,7 +16,7 @@ This project showcases my SQL and Python skills through pizza sales data analysi
 - **Pizzas:** Pizza attributes (`pizza_id`, `pizza_type_id`, `size`, `price`)
 - **Pizza_Types:** Pizza categories and ingredients (`pizza_type_id`, `name`, `category`)
 
-**[ER Diagram](link-to-your-diagram)** 📊
+**[ER Diagram](https://github.com/twaran1998/SQL_Pizza_Sales_Data_Job_Analysis-/blob/main/Database%20Schema%20and%20Relationships/pizza_sales_schema.png)** 📊
 
 ---
 
