@@ -1,7 +1,6 @@
 -- Advanced:
 
-
--- Calculate the percentage contribution of each pizza type to total revenue.
+-- 1)  Calculate the percentage contribution of each pizza type to total revenue.
 
 SELECT 
     pizza_types.category,
@@ -23,7 +22,7 @@ GROUP BY pizza_types.category
 ORDER BY REVENUE DESC;
 
 
--- Analyze the cumulative revenue generated over time.
+-- 2) Analyze the cumulative revenue generated over time.
 
 SELECT order_date,
 sum(revenue) over(order by order_date) as cum_revenue
@@ -41,7 +40,7 @@ GROUP BY orders.order_date
 
 
 
--- Determine the top 3 most ordered pizza types based on revenue for each pizza category.
+-- 3) Determine the top 3 most ordered pizza types based on revenue for each pizza category.
 
 select name, revenue FROM 
 (select category, name ,revenue ,
@@ -56,4 +55,5 @@ select pizza_types.category,pizza_types.name,
  on order_details.pizza_id=pizzas.pizza_id
  group by pizza_types.category,pizza_types.name) as a) as b 
 where rn <= 3 ;
+
 
