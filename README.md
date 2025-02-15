@@ -163,12 +163,12 @@ Category-wise sales, hourly order patterns, average daily orders, and top revenu
 -Advanced: 
 Revenue contributions by pizza type, cumulative revenue trends, and top revenue-generating pizzas per category.
 
----
-**Why I Am a Strong Fit for Data and Business Analyst Roles:**  
-This project demonstrates my ability to collect, clean, analyze, and visualize data to derive actionable business insights. My approach to problem-solving and storytelling through dashboards aligns perfectly with business analysis and data analytics roles.
 ### 🌐 **Portfolio & Social Links:**  
 - [LinkedIn](https://www.linkedin.com/in/twaransahai/)  
 - [GitHub](https://github.com/twaran1998)  
 - [Portfolio](https://twaransahai-portfolio-ts.netlify.app/)
 - [Resume](https://twaransahai-portfolio-ts.netlify.app/assets/resume/Business_Analyst_Resume.pdf)
 
+---
+**Why I Am a Strong Fit for Data and Business Analyst Roles:**  
+This project demonstrates my ability to collect, clean, analyze, and visualize data to derive actionable business insights. My approach to problem-solving and storytelling through dashboards aligns perfectly with business analysis and data analytics roles.
