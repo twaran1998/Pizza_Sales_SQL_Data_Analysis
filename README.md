@@ -163,11 +163,11 @@ Category-wise sales, hourly order patterns, average daily orders, and top revenu
 -Advanced: 
 Revenue contributions by pizza type, cumulative revenue trends, and top revenue-generating pizzas per category.
 
-### 🌐 **Portfolio & Social Links:**  
-- [LinkedIn](https://www.linkedin.com/in/twaransahai/)  
+### 🔗 **Portfolio & Social Links:**  
+- [LinkedIn](www.linkedin.com/in/twaran-sahai-ts) 
 - [GitHub](https://github.com/twaran1998)  
-- [Portfolio](https://twaransahai-portfolio-ts.netlify.app/)
-- [Resume](https://twaransahai-portfolio-ts.netlify.app/assets/resume/Business_Analyst_Resume.pdf)
+- [Portfolio](https://ts-twaransahai-portfolio.netlify.app/)
+- [Resume](https://drive.google.com/file/d/14AqwS7vNUBs6A9Ui82XSSoUUocS_DXkW/view) 
 
 ---
 **Why I Am a Strong Fit for Data and Business Analyst Roles:**  
